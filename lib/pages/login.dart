@@ -10,9 +10,9 @@ class LoginPage extends StatelessWidget {
       child: Center(
         child: Text("LoginPage",style: TextStyle(
           fontSize: 30, 
-          color: Colors.blue
-          fontWeight: FontWeight.bold
-          )
+          color: Colors.blue,
+          fontWeight: FontWeight.bold 
+          ),
         ),
     //har widget ki apni key hoti h
       ),
