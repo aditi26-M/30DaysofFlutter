@@ -10,24 +10,22 @@ class _LoginPageState extends State<LoginPage> {
   String name = "";
   bool changeButton = false;
 
-  final  _formKey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
 
   //method - moveToHome
   moveToHome(BuildContext context) async {
-    if(_formKey.currentState!.validate()) {
+    //  if(_formKey.currentState!.validate()) {
     setState(() {
-                            changeButton = true;
-                          });
-                          await Future.delayed(Duration(seconds: 2));
-                          await Navigator.pushNamed(context, MyRoutes.homeRoute);
-          
-                          setState(() {
-                            changeButton = false;
-                          }
-                          );
-    } 
-  }
+      changeButton = true;
+    });
+    await Future.delayed(Duration(seconds: 2));
+    await Navigator.pushNamed(context, MyRoutes.homeRoute);
 
+    setState(() {
+      changeButton = false;
+    });
+    // }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -52,8 +50,8 @@ class _LoginPageState extends State<LoginPage> {
                   height: 5,
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 15.0, horizontal: 20),
+                  padding: const EdgeInsets.symmetric(
+                      vertical: 15.0, horizontal: 20),
                   child: Column(
                     children: [
                       TextFormField(
@@ -61,7 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                           hintText: "Enter username",
                           labelText: "UserName",
                         ),
-
+/*
                         validator: (value) {
                           if (value!.isEmpty) {
                             return "Username cannot be empty";
@@ -69,20 +67,19 @@ class _LoginPageState extends State<LoginPage> {
                           return null;
                         },
 
-
+*/
 
                         onChanged: (value) {
                           name = value;
-          
+
                           setState(() {});
                         },
                       ),
                       TextFormField(
                         obscureText: true,
                         decoration: const InputDecoration(
-                            hintText: "Enter password", labelText: "Password"
-                            ),
-
+                            hintText: "Enter password", labelText: "Password"),
+/*
                             validator: (value) {
                           if (value!.isEmpty) {
                             return "Password cannot be empty";
@@ -93,44 +90,44 @@ class _LoginPageState extends State<LoginPage> {
                           }
 
                           return null;
-                        },
-
+                        },  
+*/
                       ),
-
-
                       const SizedBox(
                         height: 30,
                       ),
                       Material(
                         color: Colors.lightBlue,
                         borderRadius:
-                                    BorderRadius.circular(changeButton ? 50 : 16),
-                       
+                            BorderRadius.circular(changeButton ? 50 : 16),
                         child: InkWell(
                           onTap: () => moveToHome(context),
-                          
                           child: AnimatedContainer(
                             duration: Duration(seconds: 2),
                             alignment: Alignment.center,
                             height: 40,
                             width: changeButton ? 40 : 130,
-                            child: changeButton ? Icon(Icons.done, color: Colors.white,) : const Text(
-                              "Login",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                              ),
-                            ),
-                          
-                          //  decoration: BoxDecoration(
-                          //      color: Colors.lightBlue,
-                                
-                          // shape: changeButton ? BoxShape.circle : BoxShape.rectangle,
-                                
+                            child: changeButton
+                                ? Icon(
+                                    Icons.done,
+                                    color: Colors.white,
+                                  )
+                                : const Text(
+                                    "Login",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 15,
                                     ),
+                                  ),
+
+                            //  decoration: BoxDecoration(
+                            //      color: Colors.lightBlue,
+
+                            // shape: changeButton ? BoxShape.circle : BoxShape.rectangle,
                           ),
                         ),
+                      ),
                     ],
                     /*
                       ElevatedButton(
