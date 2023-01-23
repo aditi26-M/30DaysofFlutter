@@ -15,9 +15,15 @@ class MyApp extends StatelessWidget {
         //home: HomePage(),
         themeMode: ThemeMode.dark,
         theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
-          fontFamily: GoogleFonts.lato().fontFamily,
-        ),
+            primarySwatch: Colors.deepPurple,
+            fontFamily: GoogleFonts.lato().fontFamily,
+            appBarTheme: AppBarTheme(
+              color: Colors.white,
+              elevation: 0,
+              iconTheme: IconThemeData(color: Colors.black),
+              toolbarTextStyle: Theme.of(context).textTheme.bodyText2,
+              titleTextStyle: Theme.of(context).textTheme.headline6,
+            )),
         debugShowCheckedModeBanner: false,
         //PrimarySwatch - Collection of colours
         /*
