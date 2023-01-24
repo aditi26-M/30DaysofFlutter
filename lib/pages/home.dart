@@ -10,14 +10,13 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Store"),
       ),
-      body: Center(
-        child: Container(
-          child: Text(
-            'Welcome to $name',
-            style: TextStyle(fontSize: 20),
-          ),
-        ),
+      body: Container(
+        height: 100,
+        width: 100,
+        color: Colors.lightBlueAccent,
+        
       ),
+      
       drawer: MyDrawer(),
     );
   }
