@@ -6,7 +6,8 @@ class CatalogModel {
         "The POCO M3 is a stylish personal device that offers immersive visuals, seamless performance, and long battery life for uninterrupted functioning.",
         10000,
         "blue",
-        "https://www.kibotek.com/wp-content/uploads/2021/05/kiboTEK_poco_m3_pro_006.jpg")
+        "https://www.kibotek.com/wp-content/uploads/2021/05/kiboTEK_poco_m3_pro_006.jpg"
+        )
   ];
 }
 
