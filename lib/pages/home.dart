@@ -13,39 +13,47 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   String name = "Flutter";
 
-@override
+  @override
   void initState() {
     // TODO: implement initState
     super.initState();
-      loadData();
+    loadData();
   }
 
   loadData() async {
-    var catalogJson = await rootBundle.loadString("assets/files/catalog.json");
-    var decodeData = jsonDecode(catalogJson);
-    var productData = decodeData["products"];
-
+    await Future.delayed(Duration(seconds: 2));
+    final catalogJson = await rootBundle.loadString("assets/files/catalog.json");
+    final decodeData = jsonDecode(catalogJson);
+    var productsData = decodeData["products"];
+    CatalogModel.items = List.from(productsData)
+        .map<Item>((item) => Item.fromMap(item))
+        .toList();
+    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    final dummyList = List.generate(10, (index) => CatalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Store"),
+        title: Text("Phone Store"),
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(7, 25, 0, 0),
-        child: ListView.builder(
-          itemCount: dummyList.length,
-          itemBuilder: ((context, index) {
+        child: (CatalogModel.items != null && CatalogModel.items.isNotEmpty) ? ListView.builder(
+          itemCount: CatalogModel.items.length,
+          itemBuilder: (context, index) {
             return ItemWidget(
-              item: dummyList[index],
+              item: CatalogModel.items[index],
             );
-          }),
-        ),
+          }
+          )
+        
+        : Center(
+          child: CircularProgressIndicator(),
       ),
+    ),
       drawer: MyDrawer(),
     );
   }
 }
+

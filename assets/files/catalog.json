@@ -4,8 +4,8 @@
             "id": 1,
             "name": "Poco M3 pro 5G",
             "desc": "The POCO M3 is a stylish personal device that offers immersive visuals, seamless performance, and long battery life for uninterrupted functioning.",
-            "price": 10000,
-            "color": "blue",
+            "price": 950,
+            "color": "Blue",
             "image": "https://www.kibotek.com/wp-content/uploads/2021/05/kiboTEK_poco_m3_pro_006.jpg"
         },
         {
@@ -13,78 +13,72 @@
             "name": "Apple iPhone 14 Pro",
             "desc": "Apple's latest premium phone gets everything right. From the luxurious and durable finish, to cameras and display. The Dynamic Island is really cool too.",
             "price": 1000,
-            "color": "blue",
-            "image": "https://www.kibotek.com/wp-content/uploads/2021/05/kiboTEK_poco_m3_pro_006.jpg"
+            "color": "Gold",
+            "image": "https://m.media-amazon.com/images/I/71ZDY57yTQL._SX522_.jpg"
         },
         {
             "id": 3,
             "name": "ASUS ROG Phone 6 Pro",
             "desc": "The ROG Phone 6 Pro is a best of a phone, packed with features designed to appeal specifically to gamers, but delivering a great experience overall.",
             "price": 10000,
-            "color": "blue",
-            "image": "https://www.kibotek.com/wp-content/uploads/2021/05/kiboTEK_poco_m3_pro_006.jpg"
+            "color": "White",
+            "image": "https://sc04.alicdn.com/kf/H10f34a1912cd492fa242c9eb11333ffc0.jpg"
         },
         {
             "id": 4,
             "name": "Samsung Galaxy Flip 4",
             "desc": "Samsung has the most compelling folding smartphone on the market in the Z Flip 4. It's cute, and delivers that promise of a big screen that folds much smaller.",
-            "price": 10000,
-            "color": "blue",
-            "image": "https://www.kibotek.com/wp-content/uploads/2021/05/kiboTEK_poco_m3_pro_006.jpg"
+            "price": 9000,
+            "color": "Blue",
+            "image": "https://www.thechennaimobiles.com/image/cache/catalog/133615-800x800.jpg"
         },
         {
             "id": 5,
-            "name":  "Google Pixel 5a 5G",
-            "desc":  "The Pixel 5a 5G is a very impressive phone that doesn't cost a huge amount of money.",
-             "price": 10000,
-             "color": "blue",
-             "image": "https://www.kibotek.com/wp-content/uploads/2021/05/kiboTEK_poco_m3_pro_006.jpg"
-             
+            "name": "Google Pixel 5a 5G",
+            "desc": "The Pixel 5a 5G is a very impressive phone that doesn't cost a huge amount of money.",
+            "price": 10000,
+            "color": "Black",
+            "image": "https://fdn2.gsmarena.com/vv/pics/google/google-pixel-5a-5g-01.jpg"
         },
         {
             "id": 6,
-            "name":  "OnePlus 10 Pro",
-            "desc":  "The OnePlus 10 Pro is the consummate flagship phone for 2022. ",
-             "price": 10000,
-             "color": "blue",
-             "image": "https://www.kibotek.com/wp-content/uploads/2021/05/kiboTEK_poco_m3_pro_006.jpg"
-             
+            "name": "OnePlus 10 Pro",
+            "desc": "The OnePlus 10 Pro is the consummate flagship phone for 2022. ",
+            "price": 100000,
+            "color": "Emerland Forest",
+            "image": "https://cdn1.smartprix.com/rx-iG1bQDedP-w420-h420/oneplus-10-pro-5g.jpg"
         },
         {
             "id": 7,
-            "name":  "Motorola Moto G Stylus",
-            "desc":  "The Motorola Moto G Stylus 5G offer a stylus experience at a low price, a difficult combination to come by in the smartphone world.",
-             "price": 10000,
-             "color": "blue",
-             "image": "https://gadgetversus.com/img/Motorola_Moto_G_Stylus_5G_2022.jpg"
-             
+            "name": "Motorola Moto G Stylus",
+            "desc": "The Motorola Moto G Stylus 5G offer a stylus experience at a low price, a difficult combination to come by in the smartphone world.",
+            "price": 500,
+            "color": "Black",
+            "image": "https://gadgetversus.com/img/Motorola_Moto_G_Stylus_5G_2022.jpg"
         },
         {
             "id": 8,
-            "name":  "LG Chocolate",
-            "desc":  "The LG VX8500 or Chocolate is a slider cellphone-MP3 player hybrid that was sold as a feature phone by LG",
-             "price": 10000,
-             "color": "pink",
-             "image": "https://www.lg.com/us/images/cell-phones/vx8500-pink/gallery/large01.jpg"
-             
+            "name": "LG Chocolate",
+            "desc": "The LG VX8500 or Chocolate is a slider cellphone-MP3 player hybrid that was sold as a feature phone by LG",
+            "price": 200,
+            "color": "Sky Blue",
+            "image": "https://m-cdn.phonearena.com/images/phones/10727-350/LG-Chocolate-3.jpg"
         },
         {
             "id": 9,
-            "name":  "Cricket MSGM8 II ",
-            "desc":  "The phone is a tri-band candybar featuring a QWERTY keyboard, TFT display with 262k colors, 1.3 MP camera, 2.5mm jack, microUSB port and Bluetooth.",
-             "price": 10000,
-             "color": "blue",
-             "image": "https://sm.pcmag.com/pcmag_uk/photo/c/cricket-ms/cricket-msgm8-ii-cricket-angle_abkz.jpg"
-             
+            "name": "Cricket MSGM8 II ",
+            "desc": "The phone is a tri-band candybar featuring a QWERTY keyboard, TFT display with 262k colors, 1.3 MP camera, 2.5mm jack, microUSB port and Bluetooth.",
+            "price": 6000,
+            "color": "White",
+            "image": "https://sm.pcmag.com/pcmag_uk/photo/c/cricket-ms/cricket-msgm8-ii-cricket-angle_abkz.jpg"
         },
         {
             "id": 10,
-            "name":  "OppoReno8 5G",
-            "desc":  "Oppo Reno 8 is powered by an octa-core MediaTek Dimensity 1300 processor.",
-             "price": 10000,
-             "color": "blue",
-             "image": "https://gujratmobile.in/wp-content/uploads/2022/07/Oppo-Reno-8-03.jpg"
-             
+            "name": "OppoReno8 5G",
+            "desc": "Oppo Reno 8 is 5th generation phone",
+            "price": 8000,
+            "color": "Shimmer Gold",
+            "image": "https://gujratmobile.in/wp-content/uploads/2022/07/Oppo-Reno-8-03.jpg"
         }
     ]
 }

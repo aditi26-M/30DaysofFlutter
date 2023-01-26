@@ -11,14 +11,25 @@ class ItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: Color.fromARGB(255, 232, 220, 249),
+      margin: EdgeInsets.fromLTRB(17, 10, 17, 10),
       child: ListTile(
         onTap: () {
           print("${item.name}pressed");
         },
         leading: Image.network(item.image),
-        title: Text(item.name),
-        subtitle: Text(item.desc),
+        title: Text(
+          item.name,
+          style: TextStyle(
+            fontSize: 14,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        subtitle: Text(
+          item.color,
+          style: TextStyle(
+            fontSize: 14,
+          ),
+        ),
         trailing: Text(
           "\$${item.price}",
           textScaleFactor: 1.5,
