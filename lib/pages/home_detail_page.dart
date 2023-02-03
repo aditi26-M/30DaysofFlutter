@@ -13,7 +13,7 @@ class HomeDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
       ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: Container(
@@ -30,13 +30,13 @@ class HomeDetailPage extends StatelessWidget {
                         shape: MaterialStateProperty.all(
                           StadiumBorder(),
                         )),
-                    child: "Buy".text.make())
-                .wh(90, 47)
+                    child: "Add to Cart".text.make())
+                .wh(120, 47)
           ],
         ).p32(),
       ),
 
-  //Image
+      //Image
       body: SafeArea(
         bottom: false,
         child: Column(
@@ -46,7 +46,7 @@ class HomeDetailPage extends StatelessWidget {
               child: Image.network(catalog.image),
             ).h40(context).wFull(context),
 
-  // Container (Name, Price, Buy)
+            // Container (Name, Price, Buy)
             Expanded(
                 child: VxArc(
               height: 10,
@@ -60,8 +60,13 @@ class HomeDetailPage extends StatelessWidget {
                     catalog.name.text.xl3
                         .color(MyTheme.darkBluishColor)
                         .extraBold
-                        .make(),
-                    10.heightBox,
+                        .make()
+                        .p12(),
+                    catalog.desc.text.xl
+                        .textStyle(context.captionStyle)
+                        .color(const Color.fromARGB(255, 7, 65, 111))
+                        .make()
+                        .p32()
                   ],
                 ).py32(),
               ),
